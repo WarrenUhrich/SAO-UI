@@ -1,12 +1,18 @@
 #sao-popup {
 	position: fixed;
-	top: 20px;
-	left: 20px;
-	right: 130px;
+	left: 15px;
+	top: 15px;
+	right: 15px;
 	background: #D4D2D0;
 	text-align: center;
 	overflow: hidden;
+	opacity: 0;
+	max-height: 0;
 	transition: all 0.5s ease;
+}
+#sao-popup.active {
+	opacity: 1;
+	max-height: 500px;
 }
 
 #sao-popup header, #sao-popup footer {
