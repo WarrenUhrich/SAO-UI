@@ -1,32 +1,50 @@
-<html>
-<head>
-	<title>SAO</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/options.css">
-	<link rel="stylesheet" type="text/css" href="css/popup.css">
-</head>
-<body id="sao-detect-drag">
-	<ul id='sao-options'>
-		<li>
-			<div class="option">
-
-			</div>
-		</li>
-		<li>
-			<div class="option">
-
-			</div>
-		</li>
-		<li>
-			<div id="message-icon" class="option">
-
-			</div>
-		</li>
-	</ul>
-	<script type="text/javascript" src='js/activate-options.js'></script>
-	<script type="text/javascript" src='js/detect-drag.js'></script>
-	<script type="text/javascript" src='js/modal-append.js'></script>
-	<script type="text/javascript" src='js/modal.js'></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sword Art Online (SAO) UI Experiment | Warren Uhrich</title>
+		<!-- World Wide Web Site written with ♥ by Warren Uhrich; 2014-2024 -->
+		<meta property="description" content="Sword Art Online (SAO) CSS and vanilla JavaScript UI experiment: 2014-2024.">
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://warrenuhrich.github.io/SAO-UI/" />
+		<meta property="og:site_name" content="Sword Art Online (SAO) UI Experiment | Warren Uhrich" />
+		<meta property="og:title" content="Warren Uhrich: Software Engineer; UX Designer; Education Professional" />
+		<meta property="og:description" content="Sword Art Online (SAO) CSS and vanilla JavaScript user interface (UI) experiment: 2014-2024." />
+		<meta name="twitter:card" value="Sword Art Online (SAO) CSS and vanilla JavaScript user interface (UI) experiment: 2014-2024.">
+		<link rel="stylesheet" href="./css/main.css">
+		<script src="./js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Sword Art Online UI Experiment</h1>
+    <p>
+      Swipe downward to see it in action!
+      <em>
+        If you're using a mouse: click and drag downward, then let go.
+      </em>
+    </p>
+    <p>
+      To close the UI, swipe back up! Give it a try.
+    </p>
+    <nav id="sao-ui">
+      <h2 class="screen-reader-text">Options</h2>
+      <ul>
+        <li>
+          <button type="button" data-heading="Message" data-message="Heathcliff has challenged you to a duel.\r\nType: 1vs1">
+            <div>1</div>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-heading="Invite" data-message="Kirito would like to add you to their party.\r\nDo you accept?">
+            <div>2</div>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-heading="Request" data-message="Asuna would like to trade.\r\nDo you accept?">
+            <div>3</div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>
