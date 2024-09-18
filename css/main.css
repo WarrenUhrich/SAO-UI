@@ -67,6 +67,7 @@ body > p {
   color: rgba(207, 208, 197, 1);
   font-size: 3rem;
   padding: 0.5rem 1.5rem;
+  pointer-events: none; /* Just so Chromium browsers like Brave don't get greedy trying to select text. */
 }
 body > p { font-size: 1rem; }
 body > p > em {
